@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d;
+    int max (int x,int y,int w);
+    scanf("%d%d%d",&a,&b,&c);
+    d = max (a,b,c);
+    printf("max = %d\n",d);
+    return 0 ;
+}
+int max(int x,int y,int w)
+     {int z;
+      if(x>y)z = x;
+      else z = y;
+      if(w>x)z = w;
+      return z ;
+     }
+     
