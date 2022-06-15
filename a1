@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int max(int x,int y);//申明max是为了防止第七行程序无法进行
+    int a,b,c;
+    scanf("%d%d",&a,&b);//scanf后面双撇号是是指定输入数据的格式
+    c = max(a,b);//括号中a，b的值是作为给x，y的调用为实际参数
+    printf("max = %d\n",c);
+    return 0;
+
+}
+int max(int x ,int y)//这里的x，y为形式参数
+{
+    int z;
+    if(x>y)z = x;
+    else z=y;
+    return(z);
+}    
